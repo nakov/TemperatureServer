@@ -1,0 +1,13 @@
+extends layout.pug
+
+block head
+  - var pageTitle = 'Add Temperature'
+
+block content
+  form(method='POST', action="/api/temperatures/add")
+    table.contact-entry.form
+      tr.fname
+        th Temperature
+        td
+          input#t(type='text', name='t', value=`25`)
+    button#send(type='submit') Send

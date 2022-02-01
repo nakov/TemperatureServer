@@ -4,6 +4,10 @@ function setup(app, data) {
     let model = { temperatures };
     res.render('home', model);
   });
+
+  app.get('/add-temperature', function(req, res) {
+    res.render('add-temperature');
+  });
 }
 
 module.exports = { setup };

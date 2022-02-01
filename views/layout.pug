@@ -16,6 +16,13 @@ html
       if errMsg
         div(class='err') Error: #{errMsg}
       block content
+
+    aside
+      ul
+        li
+          a(href='/') Home
+        li
+          a(href='/add-temperature') Add
     
     footer
       div © 2021 - #{appName}
