@@ -1,0 +1,16 @@
+extends layout.pug
+
+block head
+  - var pageTitle = 'Temperatures'
+  meta(http-equiv="refresh" content="1")
+
+block content
+  section.home-page Temperatures collected: <b>#{temperatures.length}</b>
+
+  if temperatures.length == 0
+    p Temeparatures list is still empty.
+  
+  ul
+    each temperature in temperatures
+      li #{temperature}
+
