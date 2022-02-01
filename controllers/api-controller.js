@@ -9,8 +9,8 @@ function setup(app, data) {
     res.send(routes);
   });
 
-  app.get('/api/temperatures/add/:t', async function(req, res) {
-    let result = data.addTemperature(req.params.t);
+  app.post('/api/temperatures/add', async function(req, res) {
+    let result = data.addTemperature(req.body.t);
     if (result.errMsg)
       res.status(404).send(result);
     else
