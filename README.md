@@ -1,9 +1,9 @@
 # Temperature Server
 
-Very simple IoT server for demo purposes.
- - Collects temperatures through HTTP GET endpoint.
- - Visualizes all collected temperatures.
- - No authtehtication, no database.
+Very simple IoT server for educational purposes.
+ - Collects temperatures through HTTP POST endpoint.
+ - Visualizes all collected temperatures, with auto-refresh once per second.
+ - No authentication, no database -> everyone can write, data is lost at server restart.
  - Provides a simple API to view / add temperatures.
 
 ## Live Demo
